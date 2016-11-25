@@ -1,3 +1,4 @@
+@@ -0,0 +1,3090 @@
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
 
@@ -2461,23 +2462,24 @@
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #4acaa8;
-		color: #d1f1e9;
+    background: #fff;
+    border-right: 1px solid #dcddce;
+    color: #555;
 		height: 100%;
 		overflow-y: auto;
 		position: fixed;
-		text-align: center;
+		text-align: left;
 		top: 0;
 		width: 23em;
-		right: 0;
+		left: 0;
 	}
 
 		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
-			color: #ffffff;
+			color: #555;
 		}
 
 			#header h1 a, #header h2 a, #header h3 a, #header h4 a, #header h5 a, #header h6 a {
-				color: #ffffff;
+				color: #555;
 			}
 
 		#header header p {
@@ -2487,10 +2489,6 @@
 		#header a {
 			color: #d1f1e9;
 		}
-
-			#header a:hover {
-				color: #ffffff !important;
-			}
 
 		#header > header {
 			-moz-flex-shrink: 0;
@@ -2512,8 +2510,7 @@
 			}
 
 			#header > header p {
-				color: #d1f1e9;
-				font-style: italic;
+				color: #555;
 				margin: 1em 0 0 0;
 			}
 
@@ -2541,6 +2538,7 @@
 			-webkit-flex-grow: 1;
 			-ms-flex-grow: 1;
 			flex-grow: 1;
+			padding: 0 2em;
 		}
 
 			#header > nav ul {
@@ -2550,7 +2548,6 @@
 			}
 
 				#header > nav ul li {
-					border-top: solid 2px #5ccfb0;
 					display: block;
 					padding: 0;
 				}
@@ -2561,26 +2558,28 @@
 						-ms-transition: none;
 						transition: none;
 						border: 0;
-						color: #ffffff !important;
-						display: block;
-						padding: 0.85em 0;
+display: inline-block;
+text-indent: -15px;
+position: relative;
+left: 15px;
+						padding: .1em;
 						text-decoration: none;
 					}
 
-						#header > nav ul li a.active {
-							background: #fff;
-							color: #4acaa8 !important;
-						}
-
-					#header > nav ul li:first-child {
-						border-top: 0;
-					}
+#header > nav ul li a:hover:before, #header > nav ul li a.selected:before {
+    display: inline-block;
+    text-align: center;
+    left: 10px;
+    color: white;
+    content: "◈";
+    font-size: 100%;
+}
 
 /* Wrapper */
 
 	#wrapper {
 		background: #fff;
-		padding-right: 23em;
+		padding-left: 23em;
 	}
 
 /* Main */
@@ -2671,7 +2670,7 @@
 		/* Wrapper */
 
 			#wrapper {
-				padding-right: 21em;
+				padding-left: 21em;
 			}
 
 		/* Main */
@@ -2701,7 +2700,7 @@
 		/* Wrapper */
 
 			#wrapper {
-				padding-right: 20em;
+				padding-left: 20em;
 			}
 
 	}
@@ -3087,4 +3086,4 @@
 				padding: 0;
 			}
 
-	}
+	} 
